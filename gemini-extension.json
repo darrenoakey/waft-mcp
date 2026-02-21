@@ -1,0 +1,11 @@
+{
+  "name": "waft",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "waft": {
+      "type": "stdio",
+      "command": "waft"
+    }
+  }
+}
