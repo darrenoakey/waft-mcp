@@ -1,0 +1,12 @@
+{
+  "name": "waft-mcp",
+  "plugins": [
+    {
+      "name": "waft",
+      "version": "1.0.0",
+      "path": ".",
+      "description": "Deploy, monitor, and scale production apps — directly from your AI assistant",
+      "repository": "https://github.com/darrenoakey/waft-mcp"
+    }
+  ]
+}

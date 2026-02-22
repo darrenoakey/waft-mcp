@@ -1,48 +1,51 @@
 # waft-mcp
 
-Waft MCP plugin — gives your AI assistant the ability to deploy, monitor, and scale production apps.
+Waft plugin for AI coding assistants — gives your agent the ability to deploy, monitor, and scale production apps.
 
-## Install
+## Claude Code
 
-### Gemini CLI
+Two commands inside Claude Code. No terminal needed — the binary downloads automatically on first use.
+
+```
+/plugin marketplace add darrenoakey/waft-mcp
+/plugin install waft@waft-mcp
+```
+
+Then tell Claude: *"make this live"* or *"deploy this as my-app"* and it handles everything.
+
+## Gemini CLI
 
 ```bash
 curl -sSL https://waft.dev/install | sh
 gemini extensions install https://github.com/darrenoakey/waft-mcp
 ```
 
-### Claude Code
+## Codex CLI
 
 ```bash
 curl -sSL https://waft.dev/install | sh
 ```
 
-The install script downloads the waft binary and registers it with Claude Code automatically.
+The script detects Codex and registers automatically.
 
-### Codex CLI
+---
 
-```bash
-curl -sSL https://waft.dev/install | sh
-```
+## What your agent can do
 
-The install script also registers with Codex if it detects it installed.
-
-## What it does
-
-Once installed, tell your AI assistant to deploy your project:
-
-- "make this live as my-app"
-- "what's the status of my dashboard?"
-- "show me the logs for my-api"
-- "what's the error rate on production?"
-
-Your app gets a `https://your-app.waft.dev` URL automatically.
+| Say this... | Agent does this |
+|-------------|----------------|
+| "make this live" | Deploys to `https://my-app.waft.dev` |
+| "add auto-deploy on push" | Creates GitHub Actions workflow |
+| "add API key auth" | Enables auth + rate limiting |
+| "why is my app slow?" | Reads telemetry, finds the bottleneck |
+| "show me the logs" | Tails recent log entries |
+| "show all my apps" | Lists deployed apps with URLs and status |
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `waft_release` | Deploy a directory as a new app revision |
+| `waft_release` | Zip and deploy a local directory |
 | `waft_apps` | List all deployed apps |
 | `waft_status` | Detailed app status and deployment history |
 | `waft_logs` | Tail recent log entries |
@@ -51,12 +54,13 @@ Your app gets a `https://your-app.waft.dev` URL automatically.
 
 ## Update
 
-```bash
-gemini extensions update waft   # Gemini
-curl -sSL https://waft.dev/install | sh   # Claude Code / Codex
+```
+/plugin marketplace update waft-mcp   # Claude Code
+gemini extensions update waft         # Gemini CLI
+curl -sSL https://waft.dev/install | sh   # Codex / manual
 ```
 
 ## Links
 
-- [waft.dev](https://waft.dev) — dashboard and docs
+- [waft.dev](https://waft.dev) — dashboard and full docs
 - [Getting started](https://waft.dev/portal/getting-started)

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "waft": {
+      "type": "stdio",
+      "command": "sh",
+      "args": [
+        "-c",
+        "mkdir -p ~/.local/bin && OS=$(uname -s | tr A-Z a-z) && ARCH=$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/') && [ -f ~/.local/bin/waft ] || curl -fsSL https://waft.dev/download/waft-${OS}-${ARCH} -o ~/.local/bin/waft && chmod +x ~/.local/bin/waft && exec ~/.local/bin/waft"
+      ]
+    }
+  }
+}

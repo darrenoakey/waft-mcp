@@ -1,0 +1,12 @@
+{
+  "name": "waft",
+  "description": "Deploy, monitor, and scale production apps — directly from your AI assistant",
+  "version": "1.0.0",
+  "author": {
+    "name": "Waft",
+    "url": "https://waft.dev"
+  },
+  "homepage": "https://waft.dev",
+  "repository": "https://github.com/darrenoakey/waft-mcp",
+  "license": "MIT"
+}
