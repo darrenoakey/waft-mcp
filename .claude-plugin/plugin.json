@@ -1,7 +1,7 @@
 {
   "name": "waft",
-  "description": "Deploy, monitor, and scale production apps — directly from your AI assistant",
-  "version": "1.0.0",
+  "description": "Deploy, monitor, and scale production apps \u2014 directly from your AI assistant",
+  "version": "0.1.0",
   "author": {
     "name": "Waft",
     "url": "https://waft.dev"
