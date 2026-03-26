@@ -64,3 +64,7 @@ curl -sSL https://waft.dev/install | sh   # Codex / manual
 
 - [waft.dev](https://waft.dev) — dashboard and full docs
 - [Getting started](https://waft.dev/portal/getting-started)
+
+## License
+
+This project is licensed under [CC BY-NC 4.0](https://darren-static.waft.dev) - free to use and modify, but no commercial use without permission.
